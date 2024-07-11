@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>new project</title>
+        <script>
+            function displayjoblocation(){
+                let r = document.getElementById("joblocation").value;
+                document.getElementById("location").innerHTML="your job location : " + r;
+
+            }
+        </script>
+    </head>
+    <body>
+        <h1>our job location....:</h1>
+
+        <select id="joblocation" onchange="displayjoblocation()">
+            <option id="joblocation">select</option>   
+            <option id="joblocation">chennai</option>
+            <option id="joblocation">hyderabad</option>
+            <option id="joblocation">pune</option>
+            <option id="joblocation">mumbai</option>
+            <option id="joblocation">bengulore</option>
+        </select>
+        <pre id="location"></pre>
+    
+    </body>
+</html>
